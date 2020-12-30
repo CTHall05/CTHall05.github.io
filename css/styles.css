@@ -140,6 +140,7 @@ body {
 
 .image-overlay:hover {
   opacity: 1;
+  cursor: default;
 }
 
 .image-overlay:hover > * {
@@ -164,6 +165,7 @@ body {
 #project-buttons:hover {
   background-color: var(--primary-color);
   color: white;
+  cursor: pointer;
 }
 
 /* ===== */
