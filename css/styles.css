@@ -1,0 +1,207 @@
+:root {
+  --primary-color: #4b3d60;
+  --secondary-color: #fc9c54;
+  --third-color: #fd5e53;
+  --white: white;
+  --fourth-color: #ffe373;
+}
+
+/* Base Styles */
+
+* {
+  font-family: "Karla", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+/* Navbar Css Properties */
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-toggler {
+  background-color: var(--secondary-color);
+}
+
+.nav-link {
+  color: var(--third-color) !important;
+}
+
+.nav-link:hover {
+  color: var(--white) !important;
+}
+
+/* About Section */
+
+.about-container {
+  padding: 5px;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+.img-fluid {
+  width: 150px;
+  height: 150px;
+  border-radius: 60%;
+  border: solid 3px var(--third-color) !important;
+}
+
+.about-container p {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1.25em;
+}
+
+.p-2 {
+  border-bottom: 2px solid white;
+}
+
+/* ======= */
+/* Skills Section */
+/* ======= */
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: grid;
+  background-color: var(--fourth-color);
+  padding: 10px;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.skills-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 60%;
+  border: none !important;
+}
+
+/* ====== */
+/* Projects Sections */
+/* ====== */
+
+.projects-header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.projects-group-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.projects-group-container img {
+  width: 100%;
+  height: 200px;
+}
+
+/* .project-container {
+  display: flex;
+  align-items: center;
+} */
+
+.card {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-color: var(--primary-color);
+}
+
+/* ===== */
+/* Contacts */
+/* ===== */
+
+.contacts-header {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  border-top: solid 2px white;
+}
+
+.contacts-container {
+  padding: 5px;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+/* Contacts Socials */
+
+.socials-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  margin: 20px 10px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 90px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #24292e;
+  color: white;
+}
+
+.fa:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+  color: white;
+}
+
+/* Contact Number and Email */
+
+.contact-information {
+  padding: 0;
+  margin-top: 20px;
+  list-style: none;
+  text-decoration: none;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+#contact-details {
+  text-decoration: none;
+  color: white;
+}
+
+/* Footer */
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #08183a;
+}
