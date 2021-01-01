@@ -1,9 +1,8 @@
 :root {
-  --primary-color: #4b3d60;
-  --secondary-color: #fc9c54;
-  --third-color: #fd5e53;
+  --primary-color: #293250;
+  --secondary-color: #4dd063;
+  --third-color: #ffd55a;
   --white: white;
-  --fourth-color: #ffe373;
 }
 
 /* Base Styles */
@@ -37,22 +36,29 @@ body {
   color: var(--white) !important;
 }
 
+/* Background Image */
+.jumbotron {
+  padding-top: 13%;
+  padding-left: 2%;
+  height: 60vh;
+  width: 90vw;
+  margin: auto;
+  background-image: url("../img/Machu\ Pichu.jpg");
+  background-size: cover;
+  background-position: start;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
 /* About Section */
 
 .about-container {
+  margin-top: 10px;
   padding: 5px;
   gap: 5px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   justify-items: center;
-}
-
-.img-fluid {
-  width: 150px;
-  height: 150px;
-  border-radius: 60%;
-  border: solid 3px var(--third-color) !important;
 }
 
 .about-container p {
@@ -76,13 +82,13 @@ body {
 
 .skills-container {
   display: grid;
-  background-color: var(--fourth-color);
   padding: 10px;
   gap: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
+  background-color: var(--primary-color);
 }
 
 .skills-container img {
@@ -116,7 +122,9 @@ body {
 .card {
   display: block;
   border-radius: none !important;
+  border: none;
   width: 100%;
+  height: 195px;
 }
 
 .image-overlay {
@@ -250,5 +258,49 @@ body {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
-  background-color: #08183a;
+  background-color: var(--primary-color);
+}
+
+/* =============
+  Media Queries
+  ============== */
+
+@media (min-width: 768px) {
+  .about-container {
+    width: 70vw;
+    margin: auto;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    width: 95vw;
+    margin: auto;
+    border-radius: 5px;
+  }
+
+  .projects-group-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+  }
+
+  .socials-container {
+    justify-items: end;
+    gap: 20px;
+  }
+
+  .socials-container a:nth-child(2) {
+    justify-self: start;
+  }
+
+  .contact-information {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+  }
+
+  .contacts-container p {
+    width: 80vw;
+    margin: auto;
+  }
 }
