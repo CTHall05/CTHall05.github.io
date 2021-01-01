@@ -267,7 +267,7 @@ body {
 
 @media (min-width: 768px) {
   .jumbotron {
-    background-position: start;
+    background-position: center;
   }
   .about-container {
     width: 70vw;
