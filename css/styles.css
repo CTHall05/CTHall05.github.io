@@ -45,7 +45,7 @@ body {
   margin: auto;
   background-image: url("../img/Machu\ Pichu.jpg");
   background-size: cover;
-  background-position: start;
+  background-position: center;
   background-repeat: no-repeat;
   border-radius: 5px;
 }
