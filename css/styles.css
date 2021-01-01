@@ -266,6 +266,9 @@ body {
   ============== */
 
 @media (min-width: 768px) {
+  .jumbotron {
+    background-position: start;
+  }
   .about-container {
     width: 70vw;
     margin: auto;
