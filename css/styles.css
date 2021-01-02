@@ -29,11 +29,11 @@ body {
 }
 
 .nav-link {
-  color: var(--third-color) !important;
+  color: var(--white) !important;
 }
 
 .nav-link:hover {
-  color: var(--white) !important;
+  color: var(--third-color) !important;
 }
 
 /* Background Image */
