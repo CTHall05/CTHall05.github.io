@@ -88,7 +88,6 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
-  background-color: var(--primary-color);
 }
 
 .skills-container img {
@@ -268,6 +267,7 @@ body {
 @media (min-width: 768px) {
   .jumbotron {
     background-position: center;
+    width: 70vw;
   }
   .about-container {
     width: 70vw;
@@ -277,12 +277,14 @@ body {
   .skills-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr;
-    width: 95vw;
+    width: 70vw;
     margin: auto;
     border-radius: 5px;
   }
 
   .projects-group-container {
+    width: 70vw;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr;
   }
@@ -296,14 +298,19 @@ body {
     justify-self: start;
   }
 
+  .contacts-header {
+    width: 70vw;
+    margin: auto;
+  }
+
   .contact-information {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0;
   }
 
-  .contacts-container p {
-    width: 80vw;
+  .contacts-container {
+    width: 70vw;
     margin: auto;
   }
 }
