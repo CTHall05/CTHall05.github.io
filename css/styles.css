@@ -283,7 +283,7 @@ body {
   }
 
   .projects-group-container {
-    width: 70vw;
+    width: 90vw;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr;
