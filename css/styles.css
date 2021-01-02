@@ -62,7 +62,7 @@ body {
 }
 
 .about-container p {
-  text-align: center;
+  text-align: start;
   margin-top: 5px;
   font-size: 1.25em;
 }
@@ -272,6 +272,10 @@ body {
   .about-container {
     width: 70vw;
     margin: auto;
+  }
+
+  .about-container p {
+    text-align: center;
   }
 
   .skills-container {
