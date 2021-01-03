@@ -58,6 +58,10 @@ body {
 }
 /* About Section */
 
+.story-header {
+  padding-top: 100px;
+}
+
 .about-container {
   margin-top: 10px;
   padding: 5px;
@@ -81,6 +85,7 @@ body {
 .skills-header {
   text-align: center;
   margin-bottom: 20px;
+  padding-top: 100px;
 }
 
 .skills-container {
@@ -106,6 +111,7 @@ body {
 .projects-header {
   text-align: center;
   margin-top: 50px;
+  padding-top: 100px;
 }
 
 .projects-group-container {
@@ -300,7 +306,7 @@ body {
   .projects-group-container {
     width: 90vw;
     margin: auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr;
   }
 
@@ -327,5 +333,14 @@ body {
   .contacts-container {
     width: 70vw;
     margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-group-container {
+    width: 90vw;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
   }
 }
