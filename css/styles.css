@@ -36,7 +36,8 @@ body {
   color: var(--third-color) !important;
 }
 
-/* Background Image */
+/* =================== */
+
 .travel-pictures {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -44,10 +45,6 @@ body {
   margin: auto;
   margin-top: 20px;
   padding: 10px;
-  /* background-image: url("../img/Machu\ Pichu.jpg");
-  background-size: cover;
-  background-position: end;
-  background-repeat: no-repeat; */
   border-radius: 5px;
 }
 
@@ -214,7 +211,7 @@ body {
   margin: 20px 10px;
 }
 
-.fa {
+/* .fa {
   padding: 20px;
   font-size: 30px;
   width: 90px;
@@ -222,10 +219,10 @@ body {
   text-decoration: none;
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
-}
+} */
 
-.fa-linkedin {
-  background: #007bb5;
+.linkedin-svg {
+  background-color: #007bb5;
   color: white;
 }
 
@@ -273,6 +270,121 @@ body {
   Media Queries
   ============== */
 
+@media (min-width: 426px) {
+  .travel-pictures {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media (max-width: 649px) {
+  .slider {
+    display: none;
+  }
+  .slide {
+    display: none;
+  }
+}
+
+@media (min-width: 650px) {
+  /* ======== Image Slider ======== */
+
+  .travel-pictures {
+    display: none;
+  }
+
+  .slider {
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+    width: 75vw;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  .slide.current {
+    opacity: 1;
+  }
+
+  .slide .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 250px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: var(--third-color);
+    opacity: 0;
+    color: #333;
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  .slide .content h1 {
+    margin-bottom: 10px;
+  }
+
+  .slide.current .content {
+    opacity: 1;
+    transform: translateX(200px);
+    transition: all 0.7s ease-in-out 0.3s;
+  }
+
+  .buttons button#next {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+  }
+
+  .buttons button#prev {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+  }
+
+  .buttons button {
+    border: 2px solid var(--third-color);
+    background-color: var(--third-color);
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+  }
+
+  .buttons button:hover {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--white);
+  }
+
+  .slide:first-child {
+    background: url(../img/travel-pictures/Machu\ Pichu.jpg) no-repeat center
+      center/cover;
+  }
+  .slide:nth-child(2) {
+    background: url(../img/travel-pictures/SouthAfrica.jpg) no-repeat center
+      center/cover;
+  }
+  .slide:nth-child(3) {
+    background: url(../img/travel-pictures/Dubai.jpg) no-repeat center
+      center/cover;
+  }
+}
+
+/* Ipad and Desktop */
 @media (min-width: 768px) {
   .container-fluid {
     width: 70vw;
@@ -280,10 +392,14 @@ body {
     padding: 0;
   }
 
+  .slide.current .content {
+    opacity: 1;
+    transform: translateX(300px);
+    transition: all 0.7s ease-in-out 0.3s;
+  }
+
   .travel-pictures {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    width: 70vw;
+    display: none;
   }
 
   .about-container {
@@ -342,5 +458,11 @@ body {
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr;
+  }
+
+  .slide.current .content {
+    opacity: 1;
+    transform: translateX(500px);
+    transition: all 0.7s ease-in-out 0.3s;
   }
 }
