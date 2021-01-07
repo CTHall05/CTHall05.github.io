@@ -18,7 +18,6 @@ const nextSlide = () => {
     // Add current to start
     slides[0].classList.add('current');
   }
-  setTimeout(() => current.classList.remove('current'));
 };
 
 const prevSlide = () => {
@@ -34,7 +33,6 @@ const prevSlide = () => {
     // Add current to last
     slides[slides.length - 1].classList.add('current');
   }
-  setTimeout(() => current.classList.remove('current'));
 };
 
 // Button events
@@ -59,3 +57,16 @@ if (auto) {
   // Run next slide at interval time
   slideInterval = setInterval(nextSlide, intervalTime);
 }
+
+
+// ====== Project Click Event ====== //
+
+const projectDiv = document.querySelectorAll(".projects-group-container");
+const projectOverlay = document.querySelectorAll(".project-overlay")
+
+projectDiv.addEventListener("click", () => {
+  if (e.target !== projectDiv) {
+  projectOverlay.classList.remove(".hidden")
+  console.log('yeah')
+  }
+});
