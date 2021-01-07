@@ -65,8 +65,5 @@ const projectDiv = document.querySelectorAll(".projects-group-container");
 const projectOverlay = document.querySelectorAll(".project-overlay")
 
 projectDiv.addEventListener("click", () => {
-  if (e.target !== projectDiv) {
-  projectOverlay.classList.remove(".hidden")
-  console.log('yeah')
-  }
+  console.log("yeah");
 });
