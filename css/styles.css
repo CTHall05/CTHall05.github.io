@@ -184,6 +184,35 @@ body {
   cursor: pointer;
 }
 
+/* ====== Project Overlay ====== */
+
+.hidden {
+  display: none;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.project-card {
+  width: 250px;
+  height: 330px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #600538;
+  border: 5px solid #ff8606;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+/* ============================= */
+
 /* ===== */
 /* Contacts */
 /* ===== */
@@ -211,22 +240,19 @@ body {
   margin: 20px 10px;
 }
 
-svg {
+.linkedin-svg,
+.github-svg {
+  width: 90px;
+  height: 90px;
+  background-color: white;
   border-radius: 5px;
 }
 
-svg:hover {
+.linkedin-svg:hover,
+.github-svg:hover {
   transform: scale(1.1);
   opacity: 0.7;
   border: none !important;
-}
-
-.linkedin-svg {
-  background-color: var(--white);
-}
-
-.github-svg {
-  background-color: var(--white);
 }
 
 /* Contact Number and Email */
