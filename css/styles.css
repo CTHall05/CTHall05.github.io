@@ -197,18 +197,52 @@ body {
   right: 0;
   bottom: 0;
   background: rgba(100, 100, 100, 0.4);
+  z-index: 1;
 }
 
 .project-card {
-  width: 250px;
-  height: 330px;
-  margin: 15% auto auto;
-  position: relative;
+  width: auto;
+  margin: auto;
   text-align: center;
-  background: #600538;
-  border: 5px solid #ff8606;
+  background: var(--primary-color);
+  border: 2px solid var(--third-color);
   border-radius: 10px;
   padding: 30px 20px;
+}
+
+.project-close {
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+}
+
+.project-close:hover {
+  background-color: var(--third-color);
+  color: black;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.skills-used {
+  list-style: none;
+  padding: 0;
+  margin: 5px;
+}
+
+.skills-used li {
+  border: 2px solid var(--third-color);
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 /* ============================= */
