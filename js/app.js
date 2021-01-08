@@ -61,19 +61,24 @@ if (auto) {
 
 // ====== Project Overlay Click Event ====== //
 
-const projectDiv = document.querySelector(".project");
-const projectOverlay = document.getElementById("projectCardContainer");
-const closeProjectOverlay = document.querySelector(".project-close");
+const projectDiv = document.querySelectorAll(".project");
+const employeeProjectOverlay = document.getElementById("employeeCardContainer");
+const musicalHangmanProjectOverlay = document.getElementById("musicalHangmanCardContainer");
+const closeProjectOverlay = document.querySelectorAll(".project-close");
 
 
 // Employee Directory Project Card //
-projectDiv.addEventListener('click', () => {
-  projectOverlay.classList.remove("hidden");
-});
-
+for (let i = 0; i < projectDiv.length; i++) {
+  projectDiv[i].addEventListener('click', () => {
+    employeeProjectOverlay.classList.remove("hidden");
+    musicalHangmanProjectOverlay.classList.remove("hidden");
+  });
+};
 
 // ===== Project Close Event Listener ====== //
 
-closeProjectOverlay.addEventListener('click', () => {
-  projectOverlay.classList.add('hidden');
-});
+for (let i = 0; i < closeProjectOverlay.length; i++) {
+  closeProjectOverlay[i].addEventListener('click', () => {
+    console.log("hey");
+  });
+};
