@@ -59,11 +59,21 @@ if (auto) {
 }
 
 
-// ====== Project Click Event ====== //
+// ====== Project Overlay Click Event ====== //
 
-const projectDiv = document.querySelectorAll(".projects-group-container");
-const projectOverlay = document.querySelectorAll(".project-overlay")
+const projectDiv = document.querySelector(".project");
+const projectOverlay = document.getElementById("projectCardContainer");
+const closeProjectOverlay = document.querySelector(".project-close");
 
-projectDiv.addEventListener("click", () => {
-  console.log("yeah");
+
+// Employee Directory Project Card //
+projectDiv.addEventListener('click', () => {
+  projectOverlay.classList.remove("hidden");
+});
+
+
+// ===== Project Close Event Listener ====== //
+
+closeProjectOverlay.addEventListener('click', () => {
+  projectOverlay.classList.add('hidden');
 });
