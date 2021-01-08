@@ -179,7 +179,7 @@ body {
 }
 
 #project-buttons:hover {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: white;
   cursor: pointer;
 }
@@ -192,6 +192,8 @@ body {
 
 .project-overlay {
   position: absolute;
+  width: auto;
+  height: 90vh;
   top: 0;
   left: 0;
   right: 0;
