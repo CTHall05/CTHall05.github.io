@@ -59,7 +59,7 @@ if (auto) {
 }
 
 
-// ====== Project Overlay Click Event ====== //
+// ====== Project Overlay Cards ====== //
 
 const projectDiv = document.querySelectorAll(".project");
 const employeeProjectOverlay = document.getElementById("employeeCardContainer");
@@ -67,18 +67,15 @@ const musicalHangmanProjectOverlay = document.getElementById("musicalHangmanCard
 const closeProjectOverlay = document.querySelectorAll(".project-close");
 
 
-// Employee Directory Project Card //
-for (let i = 0; i < projectDiv.length; i++) {
-  projectDiv[i].addEventListener('click', () => {
-    employeeProjectOverlay.classList.remove("hidden");
-    musicalHangmanProjectOverlay.classList.remove("hidden");
-  });
-};
+// ===== Project Open and Close Event Listener ====== //
 
-// ===== Project Close Event Listener ====== //
-
-for (let i = 0; i < closeProjectOverlay.length; i++) {
-  closeProjectOverlay[i].addEventListener('click', () => {
-    console.log("hey");
+projectDiv.forEach( project => {
+  const projectOverlay = project.querySelector('.project-overlay');
+  project.addEventListener('click', e => {
+    if (e.target.classList.contains('project-close')) {
+      projectOverlay.classList.add('hidden');
+    } else {
+      projectOverlay.classList.remove('hidden');
+    }
   });
-};
+});
