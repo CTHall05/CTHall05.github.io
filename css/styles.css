@@ -207,6 +207,7 @@ body {
   border: 2px solid var(--third-color);
   border-radius: 10px;
   padding: 30px 20px;
+  margin-bottom: 20px;
 }
 
 .project-close {
