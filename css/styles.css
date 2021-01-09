@@ -200,13 +200,15 @@ body {
   z-index: 1;
 }
 .project-card {
-  width: 310px;
+  position: relative;
+  width: 300px;
   margin: auto;
   text-align: center;
   background: var(--primary-color);
   border: 2px solid var(--third-color);
   border-radius: 10px;
   padding: 30px 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -321,6 +323,13 @@ body {
 /* =============
   Media Queries
   ============== */
+
+@media (max-width: 320px) {
+  .project-overlay {
+    position: relative;
+    margin-right: 10px;
+  }
+}
 
 @media (min-width: 426px) {
   .travel-pictures {
