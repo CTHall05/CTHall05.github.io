@@ -191,19 +191,16 @@ body {
 }
 
 .project-overlay {
-  position: absolute;
-  width: auto;
-  height: 90vh;
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: 85px;
   right: 0;
   bottom: 0;
+  left: 0;
   background: rgba(100, 100, 100, 0.4);
   z-index: 1;
 }
-
 .project-card {
-  width: auto;
+  width: 310px;
   margin: auto;
   text-align: center;
   background: var(--primary-color);
@@ -433,6 +430,11 @@ body {
   .slide:nth-child(3) {
     background: url(../img/travel-pictures/Dubai.jpg) no-repeat center
       center/cover;
+  }
+
+  /* Project Cards */
+  .project-card {
+    width: 450px;
   }
 }
 
