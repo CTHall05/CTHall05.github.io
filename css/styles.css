@@ -192,12 +192,12 @@ body {
 
 .project-overlay {
   position: fixed;
-  top: 85px;
+  top: 10px;
   right: 0;
   bottom: 0;
   left: 0;
   background: rgba(100, 100, 100, 0.4);
-  z-index: 1;
+  z-index: 2000;
 }
 .project-card {
   position: relative;
@@ -245,6 +245,15 @@ body {
   border: 2px solid var(--third-color);
   border-radius: 5px;
   margin-top: 5px;
+}
+
+.card-content #project-buttons {
+  width: 40%;
+  display: inline;
+}
+
+.card-content a {
+  text-decoration: none;
 }
 
 /* ============================= */
@@ -324,10 +333,15 @@ body {
   Media Queries
   ============== */
 
-@media (max-width: 320px) {
+@media (max-width: 420px) {
   .project-overlay {
     position: relative;
     margin-right: 10px;
+    background: none;
+  }
+
+  .card-content #project-buttons {
+    height: auto;
   }
 }
 
