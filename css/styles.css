@@ -294,10 +294,6 @@ body {
   background-color: white;
 }
 
-.linkedin-svg path {
-  fill: #0e76a8;
-}
-
 .linkedin-svg:hover,
 .github-svg:hover {
   transform: scale(1.1);
