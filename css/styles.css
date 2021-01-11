@@ -156,7 +156,7 @@ body {
 
 .image-overlay:hover {
   opacity: 1;
-  cursor: default;
+  cursor: pointer;
 }
 
 .image-overlay:hover > * {
