@@ -453,7 +453,7 @@ a {
   }
 
   .slide:first-child {
-    background: url(../img/travel-pictures/Machu\ Pichu.jpg) no-repeat center
+    background: url(../img/travel-pictures/Machu-Pichu.jpg) no-repeat center
       center/cover;
   }
   .slide:nth-child(2) {
