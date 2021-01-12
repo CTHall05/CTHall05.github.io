@@ -18,6 +18,14 @@ body {
   color: var(--white);
 }
 
+a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 5px;
+  margin: 5px;
+}
+
 /* Navbar Css Properties */
 
 .navbar {
@@ -168,7 +176,7 @@ body {
   font-weight: bold;
 }
 
-#project-buttons {
+.project-buttons {
   font-size: 1.2em;
   width: 150px;
   height: 35px;
@@ -178,7 +186,7 @@ body {
   background-color: var(--third-color);
 }
 
-#project-buttons:hover {
+.project-buttons:hover {
   background-color: var(--secondary-color);
   color: white;
   cursor: pointer;
@@ -247,7 +255,7 @@ body {
   margin-top: 5px;
 }
 
-.card-content #project-buttons {
+.card-content .project-buttons {
   width: 40%;
   display: inline;
 }
@@ -313,7 +321,7 @@ body {
   gap: 20px;
 }
 
-#contact-details {
+.contact-details {
   text-decoration: none;
   color: white;
 }
@@ -341,7 +349,7 @@ body {
     background: none;
   }
 
-  .card-content #project-buttons {
+  .card-content .project-buttons {
     height: auto;
   }
 }
